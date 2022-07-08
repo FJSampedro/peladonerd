@@ -25,6 +25,8 @@ metadata:
   name: hello
 spec:
   type: LoadBalancer
+  externalIPs:        #Borrar cuando se use en un servidor cloud con loadbalancer
+  - 192.168.59.101 
   ports:
   - port: 8080
     targetPort: 8080
